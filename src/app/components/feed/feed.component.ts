@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Photo } from 'src/app/models/photo';
+
+import { FeedService } from 'src/app/services/feed.service';
 
 @Component({
   selector: 'app-feed',
@@ -6,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feed.component.css']
 })
 export class FeedComponent implements OnInit {
+  photos : Photo[] = [];
 
-  constructor() { }
+  constructor(private feedService : FeedService) { }
 
   ngOnInit(): void {
+    this.photos = this.feedService.getPhotos();
   }
 
 }
