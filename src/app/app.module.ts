@@ -6,6 +6,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { FeedComponent } from './components/feed/feed.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FeedPhotoComponent } from './components/feed/feed-photo/feed-photo.component';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,10 +14,11 @@ import { FeedPhotoComponent } from './components/feed/feed-photo/feed-photo.comp
     NavComponent,
     FeedComponent,
     FooterComponent,
-    FeedPhotoComponent
+    FeedPhotoComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
