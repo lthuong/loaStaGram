@@ -17,6 +17,7 @@ export class FeedComponent implements OnInit {
     this.feedService.getPhotos().subscribe((photos) => {
       this.photos = photos;
       // add a comment
+      // add more comment
     });
 
   }
