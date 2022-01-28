@@ -16,7 +16,11 @@ export class FeedComponent implements OnInit {
   ngOnInit(): void {
     this.feedService.getPhotos().subscribe((photos) => {
       this.photos = photos;
-      // i will add something like this
+      /**
+       * Let's add a few line of comments
+       * I'm still very new to all of this
+       * Hope that i will get better soon
+       */
     });
 
   }
