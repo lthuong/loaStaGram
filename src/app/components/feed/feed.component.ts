@@ -19,7 +19,7 @@ export class FeedComponent implements OnInit {
       /**
        * Let's add a few line of comments
        * I'm still very new to all of this
-       * Hope that i will get better
+       * Hope that i will get better soon
        */
     });
 
