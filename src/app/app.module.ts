@@ -8,7 +8,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { FeedComponent } from './components/feed/feed.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FeedPhotoComponent } from './components/feed/feed-photo/feed-photo.component';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './others/about/about.component';
 
 @NgModule({
@@ -20,12 +20,8 @@ import { AboutComponent } from './others/about/about.component';
     FeedPhotoComponent,
     AboutComponent,
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

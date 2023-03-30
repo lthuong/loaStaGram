@@ -1,13 +1,11 @@
-<div class="container">
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-      <span class="fs-4"><strong>LoaStaGram</strong></span>
-    </a>
-
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link" [routerLink]="['/about']" 
-        routerLinkActive="active">About</a></li>
-    </ul>
-  </header>
-</div>
+<nav class="navbar navbar-expand-xl bg-white">
+  <div class="container-fluid">
+    <a class="navbar-brand h1"
+      ><img src="" alt="" width="30" height="24" /> LoaStagram</a
+    >
+    <form class="d-flex">
+      <input type="search" class="form-control me-2" placeholder="Search" />
+      <button class="btn btn-ouline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
