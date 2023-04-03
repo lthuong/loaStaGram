@@ -9,6 +9,8 @@ import { NavComponent } from './components/nav/nav.component';
 import { FeedComponent } from './components/feed/feed.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FeedPhotoComponent } from './components/feed/feed-photo/feed-photo.component';
+import { AboutComponent } from './components/about/about.component';
+import { AnswerQuestionComponent } from './components/answer-question/answer-question.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { FeedPhotoComponent } from './components/feed/feed-photo/feed-photo.comp
     FeedComponent,
     FooterComponent,
     FeedPhotoComponent,
+    AboutComponent,
+    AnswerQuestionComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, MatIconModule],
   providers: [],
