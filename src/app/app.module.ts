@@ -9,7 +9,6 @@ import { NavComponent } from './components/nav/nav.component';
 import { FeedComponent } from './components/feed/feed.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FeedPhotoComponent } from './components/feed/feed-photo/feed-photo.component';
-import { AboutComponent } from './others/about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,6 @@ import { AboutComponent } from './others/about/about.component';
     FeedComponent,
     FooterComponent,
     FeedPhotoComponent,
-    AboutComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, MatIconModule],
   providers: [],
