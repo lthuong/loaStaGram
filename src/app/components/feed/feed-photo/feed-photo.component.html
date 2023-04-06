@@ -12,7 +12,7 @@
           class="comment-btn"
           mat-icon-button
           extended
-          (click)="printComment()"
+          (click)="showComment()"
         >
           <mat-icon> chat_bubble_outline </mat-icon>
         </button>
@@ -36,11 +36,11 @@
               ngModel
               name="comment"
               type="text"
-              class="form-control"
+              class="comment-control form-control"
               placeholder="Add a comment..."
             />
-            <button mat-icon-button type="submit">
-              <mat-icon>reply</mat-icon>
+            <button class="post-btn" mat-icon-button type="submit">
+              <mat-icon>arrow_forward</mat-icon>
             </button>
           </div>
         </div>

@@ -16,8 +16,7 @@ export class FeedPhotoComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  // add a comment section to the photo (later)
-  printComment(): void {
+  showComment(): void {
     this.isClicked = !this.isClicked;
   }
 
