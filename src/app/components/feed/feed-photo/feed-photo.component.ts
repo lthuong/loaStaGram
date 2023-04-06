@@ -22,6 +22,7 @@ export class FeedPhotoComponent implements OnInit {
   }
 
   onPostComment(form: NgForm) {
-    this.comments.push(form.value.comment);
+    const comment = form.value.comment;
+    if (comment != '') this.comments.push(form.value.comment);
   }
 }
