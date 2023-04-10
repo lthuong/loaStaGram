@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Photo } from '../models/photo';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 import { feedUrl } from '../environment/environment';
 
 @Injectable({
@@ -38,6 +38,9 @@ export class FeedService {
           }
         }
         return result;
+      }),
+      tap((result: Photo[]) => {
+        this.photos = result;
       })
     );
   }

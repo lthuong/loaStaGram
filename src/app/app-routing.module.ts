@@ -5,10 +5,15 @@ import { FeedComponent } from './components/feed/feed.component';
 import { AboutComponent } from './components/about/about.component';
 import { AnswerQuestionComponent } from './components/answer-question/answer-question.component';
 import { PostComponent } from './components/post/post.component';
+import { PhotosResolverService } from './components/feed/photos-resolver.service';
 
 const routes: Routes = [
-  { path: 'feed', component: FeedComponent },
-  { path: 'feed/:id', component: PostComponent },
+  { path: 'feed', component: FeedComponent, resolve: [PhotosResolverService] },
+  {
+    path: 'feed/:id',
+    component: PostComponent,
+    resolve: [PhotosResolverService],
+  },
   { path: '', redirectTo: '/feed', pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'questions', component: AnswerQuestionComponent },
