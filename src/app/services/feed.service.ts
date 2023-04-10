@@ -2,14 +2,15 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Photo } from '../models/photo';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 import { feedUrl } from '../environment/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FeedService {
-  photos = [];
+  photos: Photo[] = [];
+
   constructor(private http: HttpClient) {}
 
   getPhotos(): Observable<Photo[]> {
@@ -37,7 +38,20 @@ export class FeedService {
           }
         }
         return result;
+      }),
+      tap((result: Photo[]) => {
+        this.photos = result;
       })
     );
+  }
+
+  getPhotoById(id: number) {
+    let photo = this.photos[0];
+    for (let p of this.photos) {
+      if (p.id === id) {
+        return p;
+      }
+    }
+    return photo;
   }
 }

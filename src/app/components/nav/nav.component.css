@@ -1,9 +1,8 @@
+.navigation-container {
+  margin-bottom: 20px;
+}
+
 .app-title {
   font-size: 25px;
   font-weight: 500;
 }
-
-/* .app-icon {
-  height: 50px;
-  width: 50px;
-} */
