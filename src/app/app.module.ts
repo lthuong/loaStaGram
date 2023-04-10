@@ -13,6 +13,7 @@ import { FeedPhotoComponent } from './components/feed/feed-photo/feed-photo.comp
 import { AboutComponent } from './components/about/about.component';
 import { AnswerQuestionComponent } from './components/answer-question/answer-question.component';
 import { FormsModule } from '@angular/forms';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     FeedPhotoComponent,
     AboutComponent,
     AnswerQuestionComponent,
+    PostComponent,
   ],
   imports: [
     BrowserModule,
